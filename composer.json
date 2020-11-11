@@ -1,0 +1,36 @@
+{
+    "name": "adamb/gallery",
+    "description": "A Laravel 8 Gallery",
+    "keywords": ["laravel", "gallery"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Binnersley",
+            "email": "abinnersley@gmail.com",
+			"homepage": "https://www.adambinnersley.co.uk"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^6.20"
+    },
+	"autoload": {
+        "psr-4": {
+            "Gallery\\Gallery\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gallery\\Gallery\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gallery\\Gallery\\GalleryServiceProvider"
+            ]
+        }
+    }
+}
